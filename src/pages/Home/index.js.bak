@@ -1,0 +1,12 @@
+import {React} from "react";
+
+function Home() {
+  return (
+    <div className="App">
+      <h1>Hello World!</h1>
+	  <a href="/pokemons">Dashboard</a>
+    </div>
+  );
+}
+
+export default Home;

@@ -33,6 +33,7 @@ return(
       <div className="d-flex justify-content-center align-items-center">
     
      <h1>   M </h1>
+     <br/>
       <div className="d-flex justify-content-center align-items-center">
       <br/>
         <p className="center">Dunia Pokémon saat ini sedang mengembangkan berbagai macam konten yang berfungsi untuk merangsang pertumbuhan konten lainnya.</p>

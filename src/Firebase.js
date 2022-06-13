@@ -5,7 +5,7 @@ const settings = {timestampsInSnapshots: true};
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+const config = {
     apiKey: "AIzaSyCEfLZBsIE3jAPpDCcvg4k2I8WU7aYLm1Y",
     authDomain: "reactfirestore-d57d0.firebaseapp.com",
     projectId: "reactfirestore-d57d0",

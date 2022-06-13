@@ -13,6 +13,10 @@ import Series from "./series/Series";
 import PermainanVideo from "./permainanvideo/PermainanVideo"
 import Hero from "./hero/Hero";
 import News from "./news/News"
+import ToDoListPokemon from "./App"
+// import Edit from './ToDoListPokemon/Edit';
+// import Create from './ToDoListPokemon/Create';
+// import Show from './ToDoListPokemon/Show';
 
 
 function Routes() {
@@ -32,6 +36,11 @@ function Routes() {
           <Route path="/landing" component={Landing} />
           <Route path="/home" component={Home} />
           <Route path="/details/:name?" component={Details} />
+          {/* To Do List */}
+          <Route path='/ToDoListPokemon' component={ToDoListPokemon} />
+          {/* <Route path='/edit/:id' component={Edit} />
+          <Route path='/create' component={Create} />
+          <Route path='/show/:id' component={Show} /> */}
 
         </Switch>
       </BrowserRouter>

@@ -56,6 +56,13 @@ return(
         </div>
         <a href = "/news"> News </a>
         </button>
+        <button>
+        <div className="d-flex justify-content-center align-items-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png" height="50" width="50"
+      />
+        </div>
+        <a href = "/ToDoListPokemon"> To Do List </a>
+        </button>
         <br/>
           <br/>
         </div>

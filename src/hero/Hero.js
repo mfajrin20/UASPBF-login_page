@@ -4,11 +4,6 @@ const dashboard = () => {
     
 return(
         <>
-
-
-
-<br/>
-<br/>
 <br/>
 
 <a href = "/dashboard">
@@ -20,7 +15,6 @@ return(
               </p>
                      </a>
      
-<br/>
 <br/>
 
 

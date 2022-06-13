@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-
+import "./styles.css";
 const series = () => {
     
 return(
@@ -9,29 +9,14 @@ return(
 
 <div className="d-flex justify-content-center align-items-center">
        <h1> POKE POKE POKEMON </h1>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-     
+       
         </div>  
       <div className="d-flex justify-content-center align-items-center">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" height="300" width="850"
       />
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
         </div>
-        <br/>
-        <br/>
-        <br/>
+       
         <div className="d-flex justify-content-center align-items-center">
        
         <br/>
@@ -42,13 +27,11 @@ return(
        
         <div className="d-flex justify-content-center align-items-center">
         
-        <br/>
-          <br/>
+       
         </div>
         <Container fluid>
       <div className="d-flex justify-content-center align-items-center">
     
-     <br/>
      <h1>   M </h1>
       <div className="d-flex justify-content-center align-items-center">
       <br/>

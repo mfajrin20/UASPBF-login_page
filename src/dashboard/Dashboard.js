@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "../login/Login";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -9,8 +8,10 @@ const dashboard = () => {
     
 return(
         <>
-
+        
+<div class="margin-bottom">
         <div className="d-flex justify-content-center align-items-center">
+        
         <button>
         <div className="d-flex justify-content-center align-items-center">
       <img src="https://cdn.onlinewebfonts.com/svg/download_472997.png" height="50" width="50"
@@ -65,6 +66,7 @@ return(
         </button>
         <br/>
           <br/>
+        </div>
         </div>
         <div class="margin">
         <div className="d-flex justify-content-center align-items-center">

@@ -2,22 +2,21 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals"
 
-import Login from "./login/Login";
-import Join from "./login/Join";
+
 import Landing from "./pages/Landing";
 import Home from "./pages/Home/Home";
 import Details from "./pages/Details/Details";
 import Dashboard from "./dashboard/Dashboard";
-import About from "./about/About"
+import About from "./about/About";
 import contact from "./contact/contact";
 import Series from "./series/Series";
-import PermainanVideo from "./permainanvideo/PermainanVideo"
+import PermainanVideo from "./permainanvideo/PermainanVideo";
 import Hero from "./hero/Hero";
-import News from "./news/News"
-// import App from "./ToDoListPokemon/App"
-// import Edit from './ToDoListPokemon/Edit';
-// import Create from './ToDoListPokemon/Create';
-// import Show from './ToDoListPokemon/Show';
+import News from "./news/News";
+import App from "./TodoListPokemon/App";
+import Edit from './TodoListPokemon/Edit';
+import Create from './TodoListPokemon/Create';
+import Show from './TodoListPokemon/Show';
 
 
 function Routes() {
@@ -32,16 +31,15 @@ function Routes() {
           <Route path="/series" component={Series} />
           <Route path="/news" component={News} />
           <Route path="/permainanvideo" component={PermainanVideo} />
-          {/* <Route exact path="/" component={Login} /> */}
-          <Route path="/join" component={Join} />
+  
           <Route path="/landing" component={Landing} />
           <Route path="/home" component={Home} />
           <Route path="/details/:name?" component={Details} />
           {/* To Do List */}
-          {/* <Route path='/ToDoListPokemon' component={ToDoListPokemon} />
+          <Route path='/TodoListPokemon' component={App} />
           <Route path='/edit/:id' component={Edit} />
           <Route path='/create' component={Create} />
-          <Route path='/show/:id' component={Show} /> */}
+          <Route path='/show/:id' component={Show} />
 
         </Switch>
       </BrowserRouter>

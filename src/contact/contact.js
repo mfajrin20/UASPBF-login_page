@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "../login/Login";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -83,7 +82,9 @@ return(
                                 </div> */}
                             {/* </div> */}
                             {/* </div> */}
+                            
       </Container>
+      
       <a href = "/dashboard">
             <p className="text-light" style={{ textAlign: "center" }}>
             <div className="d-flex justify-content-center align-items-center">

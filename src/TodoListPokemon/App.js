@@ -1,9 +1,8 @@
-import React, { TodoListPokemon } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import firebase from './Firebase';
+import firebase from '../Firebase';
 
-class App extends TodoListPokemon {
+class App extends Component {
   constructor(props) {
     super(props);
     this.ref = firebase.firestore().collection('articles');

@@ -57,7 +57,7 @@ class Create extends Component {
   
     const { title, body, author, perasaan, tahap, skill, reward } = this.state;
     return (
-      <header className="container-header mb-0">
+      <header className="container-header">
        
        
       <p className="text-light" style={{ textAlign: "center" }}>
@@ -68,7 +68,7 @@ class Create extends Component {
         </p>
              
 <div className="d-flex justify-content-center align-items-center" >
-  {/* <h1>M FAJRIN </h1> */}
+
  
       <div class="container">
         <div class="panel panel-default">
@@ -86,7 +86,7 @@ class Create extends Component {
               </div>
               <div class="form-group">
                 <label for="body">Pengalaman:</label>
-                <textArea class="form-control" name="body" onChange={this.onChange} placeholder="Pengalaman" cols="80" rows="3">{body}</textArea>
+                <input class="form-control" name="body" value={body} onChange={this.onChange} placeholder="Pengalaman" />
               </div>
               <div class="form-group">
                 <label for="author">Pengguna:</label>

@@ -38,7 +38,7 @@ class Show extends Component {
 
   render() {
     return (
-      <header className="container-header mb-0">
+      <header className="container-header">
        
        
       <p className="text-light" style={{ textAlign: "center" }}>
@@ -57,7 +57,7 @@ class Show extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             
-          <h4><Link to="/App">List Pengguna</Link></h4>
+          <h4><Link to="/App">List Pengalaman</Link></h4>
             <h3 class="panel-title">
               {this.state.article.title}
             </h3>

@@ -14,9 +14,11 @@ import PermainanVideo from "./permainanvideo/PermainanVideo";
 import Hero from "./hero/Hero";
 import News from "./news/News";
 import App from "./TodoListPokemon/App";
-import Edit from './TodoListPokemon/Edit';
-import Create from './TodoListPokemon/Create';
-import Show from './TodoListPokemon/Show';
+import Edit from "./TodoListPokemon/Edit";
+import Create from "./TodoListPokemon/Create";
+import Show from "./TodoListPokemon/Show";
+import Tampil from "./ShowToDo/Tampil";
+
 
 
 function Routes() {
@@ -31,6 +33,7 @@ function Routes() {
           <Route path="/contact" component={contact} />
           <Route path="/series" component={Series} />
           <Route path="/news" component={News} />
+          <Route path="/tampil" component={Tampil} />
           <Route path="/permainanvideo" component={PermainanVideo} />
           {/* Login */}
           <Route path="/landing" component={Landing} />

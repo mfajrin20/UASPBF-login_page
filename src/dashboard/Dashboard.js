@@ -7,9 +7,10 @@ const dashboard = () => {
     
 return(
         <>
-        
-<div class="margin-bottom">
-        <div className="d-flex justify-content-center align-items-center">
+          <header className="container-header">
+      
+     
+      <div className="d-flex justify-content-center align-items-center">
         
         <button>
         <div className="d-flex justify-content-center align-items-center">
@@ -19,7 +20,7 @@ return(
         <h4><Link to="/landing">Login</Link></h4>
         
         </button>
-        <br/>
+
         <button>
         <div className="d-flex justify-content-center align-items-center">
       <img src="https://w7.pngwing.com/pngs/208/228/png-transparent-pokeball-pokebola-pokemon-pokemongo-pokemon-go-icon.png" height="50" width="50"
@@ -67,10 +68,22 @@ return(
         <h4><Link to="https://github.com/mfajrin20/UASPBF-login_page">GitHub</Link></h4>
        
         </button>
-        <br/>
-          <br/>
+        <button>
+        <div className="d-flex justify-content-center align-items-center">
+      <img src="https://static.thenounproject.com/png/3141448-200.png" height="50" width="50"
+      />
         </div>
+        <h4><Link to="/tampil">Show</Link></h4>
+       
+        </button>
+    
+   
         </div>
+  
+     
+    </header>
+
+      
         <div class="margin">
         <div className="d-flex justify-content-center align-items-center">
        <h1> SELAMAT DATANG DI POKEMON GO </h1>
@@ -99,7 +112,10 @@ return(
        
       </div>
         </div>
+        
       </Container>
+      <header className="container-header">
+    </header>
       </>
       
       

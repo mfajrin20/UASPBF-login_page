@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -54,12 +53,14 @@ return(
     
      <br/>
      <h1>   Makhluk Misterius Dengan Poké Ball </h1>
+
       <div className="d-flex justify-content-center align-items-center">
         <p className="center">Pokémon adalah makhluk misterius dengan banyak rahasia. Beberapa Pokémon tinggal bersama manusia dan beberapa tinggal di alam bebas di padang rumput, gua, atau laut, tapi banyak hal tentang ekologi mereka yang masih belum diketahui. Salah satu fitur utama mereka adalah bahwa mereka dapat ditangkap menggunakan Poké Ball, yang memungkinkan mereka dibawa-bawa.</p>
        
       </div>
+ 
         </div>
-       
+   
       </Container>
       <br/>
       <br/>

@@ -41,7 +41,8 @@ class App extends Component {
   render() {
   
     return (
-      <header className="container-header mb-0">
+      
+      <header className="container-header">
      
      
             <p className="text-light" style={{ textAlign: "center" }}>

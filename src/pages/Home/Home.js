@@ -190,16 +190,16 @@ function Home({ history, ...props }) {
                                 </button></div>
                                 <button class="ml-2 md:ml-5 mt-3 md:mt-0 bg-primary py-1 px-8 rounded-md text-white font-semibold  focus:outline-none transition duration-200 ease-in-out hover:bg-white hover:text-primary transform hover:-translate-y-1 cursor-pointer">Search</button></div> */}
           {/* // pekerjaan untuk pokemon */}
-            <a href = "/home">
+            
             <p className="text-light" style={{ textAlign: "center" }}>
             <div className="d-flex justify-content-center align-items-center">
       <img src="https://www.unbox.id/wp-content/uploads/2020/06/Logo-Ayo-Main-Pokemon.png " height="357" width="485"
             />
       </div>
               </p>
-                     </a>
                   
-                <a href = "/ToDoListPokemon">
+                  
+                <a href = "/App">
             <p className="text-light" style={{ textAlign: "center" }}>
             <div className="d-flex justify-content-center align-items-center">
             <img src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png" height="50" width="50"

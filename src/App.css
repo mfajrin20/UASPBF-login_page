@@ -24,8 +24,14 @@
   color: white;
 }
 
+.container {
+  border: 10px solid rgb(101, 215, 250);
+  width: 100%;
+  
+}
+
 .App-link {
-  color: #61dafb;
+  color: #000000;
 }
 
 @keyframes App-logo-spin {

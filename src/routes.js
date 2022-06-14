@@ -24,6 +24,7 @@ function Routes() {
     <div className="app">
       <BrowserRouter>
         <Switch>
+           {/* Dashboard */}
           <Route exact path="/" component={Hero} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/about" component={About} />
@@ -31,12 +32,12 @@ function Routes() {
           <Route path="/series" component={Series} />
           <Route path="/news" component={News} />
           <Route path="/permainanvideo" component={PermainanVideo} />
-  
+          {/* Login */}
           <Route path="/landing" component={Landing} />
           <Route path="/home" component={Home} />
           <Route path="/details/:name?" component={Details} />
           {/* To Do List */}
-          <Route path='/TodoListPokemon' component={App} />
+          <Route path='/App' component={App} />
           <Route path='/edit/:id' component={Edit} />
           <Route path='/create' component={Create} />
           <Route path='/show/:id' component={Show} />

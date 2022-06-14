@@ -34,7 +34,7 @@ class Create extends Component {
         body: '',
         author: ''
       });
-      this.props.history.push("/")
+      this.props.history.push("/App")
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
@@ -42,8 +42,22 @@ class Create extends Component {
   }
 
   render() {
+  
     const { title, body, author } = this.state;
     return (
+      <header className="container-header mb-0">
+       
+       
+      <p className="text-light" style={{ textAlign: "center" }}>
+      <div align="center">
+<img src="https://freepngimg.com/thumb/pokemon/2-2-pokemon-png-pic.png" height="100" width="300"
+      />
+</div>
+        </p>
+             
+<div className="d-flex justify-content-center align-items-center" >
+  {/* <h1>M FAJRIN </h1> */}
+ 
       <div class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -52,7 +66,7 @@ class Create extends Component {
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/" class="btn btn-primary">List Pengalaman</Link></h4>
+            <h4><Link to="/App" class="btn btn-primary">List Pengalaman</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="title">ID Pokemon:</label>
@@ -68,9 +82,20 @@ class Create extends Component {
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
+            <a href = "/App">
+            <p className="text-light" style={{ textAlign: "center" }}>
+            <div className="d-flex justify-content-center align-items-center">
+      <img src="https://icon-library.com/images/undo-512_4779.png" height="80" width="80"
+            />
+      </div>
+              </p>
+                     </a>
           </div>
         </div>
+        </div>
       </div>
+      </header>
+    
     );
   }
 }

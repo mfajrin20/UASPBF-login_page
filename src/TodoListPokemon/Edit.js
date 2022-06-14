@@ -63,11 +63,29 @@ class Edit extends Component {
 
   render() {
     return (
+      
+        <header className="container-header mb-0">
+       
+       
+        <p className="text-light" style={{ textAlign: "center" }}>
+        <div align="center">
+  <img src="https://freepngimg.com/thumb/pokemon/2-2-pokemon-png-pic.png" height="100" width="300"
+        />
+  </div>
+          </p>
+               
+  <div className="d-flex justify-content-center align-items-center" >
+    {/* <h1>M FAJRIN </h1> */}
+      
+    </div>
       <div class="container">
+      
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
+            <div class="text-center">
               Edit Pengalaman
+              </div>
             </h3>
           </div>
           <div class="panel-body">
@@ -87,9 +105,18 @@ class Edit extends Component {
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
+            <a href = "/App">
+            <p className="text-light" style={{ textAlign: "center" }}>
+            <div className="d-flex justify-content-center align-items-center">
+      <img src="https://icon-library.com/images/undo-512_4779.png" height="80" width="80"
+            />
+      </div>
+              </p>
+                     </a>
           </div>
         </div>
       </div>
+       </header>
     );
   }
 }

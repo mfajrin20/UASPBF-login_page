@@ -73,12 +73,12 @@ class App extends Component {
             <table class="table table-stripe">
               <thead>
                 <tr>
-                  <th>ID Pokemon</th>
-                  <th>Nama Pokemon</th>
-                  <th>Generasi Pokemn</th>
-                  <th>Jenis Pokemon</th>
+                  <th>ID </th>
+                  <th>Nama </th>
                   <th>Pengalaman</th>
-                  <th>Skill Pokemon</th>
+                  <th>Generasi </th>
+                  <th>Jenis </th>
+                  <th>Skill </th>
                   <th>Reward</th>
                   
                 </tr>

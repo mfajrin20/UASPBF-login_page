@@ -85,20 +85,20 @@ class Create extends Component {
                 <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Judul" />
               </div>
               <div class="form-group">
-                <label for="body">Pengalaman:</label>
-                <input class="form-control" name="body" value={body} onChange={this.onChange} placeholder="Pengalaman" />
+                <label for="body">Nama:</label>
+                <input class="form-control" name="body" value={body} onChange={this.onChange} placeholder="Nama" />
               </div>
               <div class="form-group">
-                <label for="author">Pengguna:</label>
+                <label for="author">Pengalaman:</label>
                 <input type="text" class="form-control" name="author" value={author} onChange={this.onChange} placeholder="Pengguna" />
               </div>
               <div class="form-group">
-                <label for="perasaan">Perasaan:</label>
-                <input type="text" class="form-control" name="perasaan" value={perasaan} onChange={this.onChange} placeholder="perasaan" />
+                <label for="perasaan">Generasi:</label>
+                <input type="text" class="form-control" name="perasaan" value={perasaan} onChange={this.onChange} placeholder="Generasi" />
               </div>
               <div class="form-group">
-                <label for="tahap">Tahap:</label>
-                <input type="tahap" class="form-control" name="tahap" value={tahap} onChange={this.onChange} placeholder="perasaan" />
+                <label for="tahap">Jenis:</label>
+                <input type="tahap" class="form-control" name="tahap" value={tahap} onChange={this.onChange} placeholder="Jenis" />
               </div>
               <div class="form-group">
                 <label for="skill">Skill:</label>

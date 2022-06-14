@@ -45,19 +45,19 @@ class App extends Component {
       <header className="container-header">
      
      
-            <p className="text-light" style={{ textAlign: "center" }}>
+           
             <div align="center">
       <img src="https://freepngimg.com/thumb/pokemon/2-2-pokemon-png-pic.png" height="300" width="700"
             />
       </div>
-              </p>
+       
                    
       <div className="d-flex justify-content-center align-items-center" >
         {/* <h1>M FAJRIN </h1> */}
           
         </div>
      
-   
+      
       <div class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -73,12 +73,12 @@ class App extends Component {
             <table class="table table-stripe">
               <thead>
                 <tr>
-                  <th>ID Pokemon</th>
-                  <th>Nama Pokemon</th>
-                  <th>Generasi Pokemn</th>
-                  <th>Jenis Pokemon</th>
-                  <th>Pengalaman</th>
-                  <th>Skill Pokemon</th>
+                  <th>ID </th>
+                  <th>Nama </th>
+                  <th>Pengalaman </th>
+                  <th>Generasi </th>
+                  <th>Jenis</th>
+                  <th>Skill </th>
                   <th>Reward</th>
                   
                 </tr>
@@ -112,6 +112,7 @@ class App extends Component {
                     
       </div>
        </header>
+    
     );
   }
 }

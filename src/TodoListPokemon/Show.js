@@ -64,13 +64,13 @@ class Show extends Component {
           </div>
           <div class="panel-body">
             <dl>
-              <dt>ID Pokemon:</dt>
+              <dt>Nama :</dt>
               <dd>{this.state.article.body}</dd>
-              <dt>Pengguna:</dt>
+              <dt>Pengalaman:</dt>
               <dd>{this.state.article.author}</dd>
-              <dt>Perasaaan:</dt>
+              <dt>Generasi:</dt>
               <dd>{this.state.article.perasaan}</dd>
-              <dt>Tahap:</dt>
+              <dt>Jenis:</dt>
               <dd>{this.state.article.tahap}</dd>
               <dt>Skill:</dt>
               <dd>{this.state.article.skill}</dd>

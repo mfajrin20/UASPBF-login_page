@@ -108,24 +108,24 @@ class Edit extends Component {
             <h4><Link to={`/show/${this.state.key}`} class="btn btn-primary">List Pengalaman</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
-                <label for="title">ID Pokemon:</label>
+                <label for="title">ID :</label>
                 <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
               </div>
               <div class="form-group">
-                <label for="body">Pengalaman:</label>
+                <label for="body">Nama:</label>
                 <input type="text" class="form-control" name="body" value={this.state.body} onChange={this.onChange} placeholder="Body" />
               </div>
               <div class="form-group">
-                <label for="author">Pengguna:</label>
+                <label for="author">Pengalaman:</label>
                 <input type="text" class="form-control" name="author" value={this.state.author} onChange={this.onChange} placeholder="Author" />
               </div>
               <div class="form-group">
-                <label for="perasaan">Perasaan:</label>
-                <input type="text" class="form-control" name="perasaaan" value={this.state.perasaan} onChange={this.onChange} placeholder="Perasaaan" />
+                <label for="perasaan">Generasi:</label>
+                <input type="text" class="form-control" name="perasaan" value={this.state.perasaan} onChange={this.onChange} placeholder="Generasi" />
               </div>
               <div class="form-group">
-                <label for="tahap">Tahap:</label>
-                <input type="text" class="form-control" name="tahap" value={this.state.tahap} onChange={this.onChange} placeholder="Tahap" />
+                <label for="tahap">Jenis:</label>
+                <input type="text" class="form-control" name="tahap" value={this.state.tahap} onChange={this.onChange} placeholder="Jenis" />
               </div>
               <div class="form-group">
                 <label for="skill">Skill:</label>

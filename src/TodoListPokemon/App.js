@@ -16,13 +16,17 @@ class App extends Component {
   onCollectionUpdate = (querySnapshot) => {
     const articles = [];
     querySnapshot.forEach((doc) => {
-      const { title, body, author } = doc.data();
+      const { title, body, author, perasaan, tahap , skill, reward} = doc.data();
       articles.push({
         key: doc.id,
         doc, // DocumentSnapshot
         title,
         body,
         author,
+        perasaan,
+        tahap,
+        skill,
+        reward
       });
     });
     this.setState({
@@ -42,7 +46,7 @@ class App extends Component {
      
             <p className="text-light" style={{ textAlign: "center" }}>
             <div align="center">
-      <img src="https://freepngimg.com/thumb/pokemon/2-2-pokemon-png-pic.png" height="100" width="300"
+      <img src="https://freepngimg.com/thumb/pokemon/2-2-pokemon-png-pic.png" height="300" width="700"
             />
       </div>
               </p>
@@ -69,8 +73,13 @@ class App extends Component {
               <thead>
                 <tr>
                   <th>ID Pokemon</th>
+                  <th>Nama Pokemon</th>
+                  <th>Generasi Pokemn</th>
+                  <th>Jenis Pokemon</th>
                   <th>Pengalaman</th>
-                  <th>Pengguna</th>
+                  <th>Skill Pokemon</th>
+                  <th>Reward</th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -79,6 +88,10 @@ class App extends Component {
                     <td><Link to={`/show/${article.key}`}>{article.title}</Link></td>
                     <td>{article.body}</td>
                     <td>{article.author}</td>
+                    <td>{article.perasaan}</td>
+                    <td>{article.tahap}</td>
+                    <td>{article.skill}</td>
+                    <td>{article.reward}</td>
                   </tr>
                 )}
               </tbody>

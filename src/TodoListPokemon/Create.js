@@ -10,7 +10,11 @@ class Create extends Component {
     this.state = {
       title: '',
       body: '',
-      author: ''
+      author: '',
+      perasaan:'',
+      tahap:'',
+      skill:'',
+      reward:''
     };
   }
   onChange = (e) => {
@@ -22,17 +26,25 @@ class Create extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { title, body, author } = this.state;
+    const { title, body, author, perasaan, tahap, skill, reward } = this.state;
 
     this.ref.add({
       title,
       body,
-      author
+      author,
+      perasaan,
+      tahap,
+      skill,
+      reward
     }).then((docRef) => {
       this.setState({
         title: '',
         body: '',
-        author: ''
+        author: '',
+        perasaan:'',
+        tahap:'',
+        skill:'',
+        reward:''
       });
       this.props.history.push("/App")
     })
@@ -43,7 +55,7 @@ class Create extends Component {
 
   render() {
   
-    const { title, body, author } = this.state;
+    const { title, body, author, perasaan, tahap, skill, reward } = this.state;
     return (
       <header className="container-header mb-0">
        
@@ -70,16 +82,33 @@ class Create extends Component {
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="title">ID Pokemon:</label>
-                <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
+                <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Judul" />
               </div>
               <div class="form-group">
                 <label for="body">Pengalaman:</label>
-                <textArea class="form-control" name="body" onChange={this.onChange} placeholder="Body" cols="80" rows="3">{body}</textArea>
+                <textArea class="form-control" name="body" onChange={this.onChange} placeholder="Pengalaman" cols="80" rows="3">{body}</textArea>
               </div>
               <div class="form-group">
                 <label for="author">Pengguna:</label>
-                <input type="text" class="form-control" name="author" value={author} onChange={this.onChange} placeholder="Author" />
+                <input type="text" class="form-control" name="author" value={author} onChange={this.onChange} placeholder="Pengguna" />
               </div>
+              <div class="form-group">
+                <label for="perasaan">Perasaan:</label>
+                <input type="text" class="form-control" name="perasaan" value={perasaan} onChange={this.onChange} placeholder="perasaan" />
+              </div>
+              <div class="form-group">
+                <label for="tahap">Tahap:</label>
+                <input type="tahap" class="form-control" name="tahap" value={tahap} onChange={this.onChange} placeholder="perasaan" />
+              </div>
+              <div class="form-group">
+                <label for="skill">Skill:</label>
+                <input type="skill" class="form-control" name="skill" value={skill} onChange={this.onChange} placeholder="skill" />
+              </div>
+              <div class="form-group">
+                <label for="reward">Reward:</label>
+                <input type="reward" class="form-control" name="reward" value={reward} onChange={this.onChange} placeholder="reward" />
+              </div>
+              <br/>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
             <a href = "/App">

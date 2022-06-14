@@ -57,7 +57,7 @@ class Show extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             
-          <h4><Link to="/TodoListPokemon">List Pengguna</Link></h4>
+          <h4><Link to="/App">List Pengguna</Link></h4>
             <h3 class="panel-title">
               {this.state.article.title}
             </h3>
@@ -68,6 +68,14 @@ class Show extends Component {
               <dd>{this.state.article.body}</dd>
               <dt>Pengguna:</dt>
               <dd>{this.state.article.author}</dd>
+              <dt>Perasaaan:</dt>
+              <dd>{this.state.article.perasaan}</dd>
+              <dt>Tahap:</dt>
+              <dd>{this.state.article.tahap}</dd>
+              <dt>Skill:</dt>
+              <dd>{this.state.article.skill}</dd>
+              <dt>Reward:</dt>
+              <dd>{this.state.article.reward}</dd>
             </dl>
             <Link to={`/edit/${this.state.key}`} class="btn btn-success">Edit</Link>&nbsp;
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>

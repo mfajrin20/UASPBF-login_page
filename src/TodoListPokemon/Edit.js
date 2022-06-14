@@ -10,7 +10,11 @@ class Edit extends Component {
       key: '',
       title: '',
       body: '',
-      author: ''
+      author: '',
+      perasaan:'',
+      tahap: '',
+      skill: '',
+      reward: ''
     };
   }
 
@@ -23,7 +27,11 @@ class Edit extends Component {
           key: doc.id,
           title: article.title,
           body: article.body,
-          author: article.author
+          author: article.author,
+          perasaan: article.perasaan,
+          tahap: article.tahap,
+          skill: article.skill,
+          reward: article.reward
         });
       } else {
         console.log("No such document!");
@@ -40,19 +48,27 @@ class Edit extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { title, body, author } = this.state;
+    const { title, body, author, perasaan, tahap, skill, reward } = this.state;
 
     const updateRef = firebase.firestore().collection('articles').doc(this.state.key);
     updateRef.set({
       title,
       body,
-      author
+      author,
+      perasaan,
+      tahap,
+      skill,
+      reward
     }).then((docRef) => {
       this.setState({
         key: '',
         title: '',
         body: '',
-        author: ''
+        author: '',
+        perasaan: '',
+        tahap: '',
+        skill: '',
+        reward:''
       });
       this.props.history.push("/show/"+this.props.match.params.id)
     })
@@ -102,6 +118,22 @@ class Edit extends Component {
               <div class="form-group">
                 <label for="author">Pengguna:</label>
                 <input type="text" class="form-control" name="author" value={this.state.author} onChange={this.onChange} placeholder="Author" />
+              </div>
+              <div class="form-group">
+                <label for="perasaan">Perasaan:</label>
+                <input type="text" class="form-control" name="perasaaan" value={this.state.perasaan} onChange={this.onChange} placeholder="Perasaaan" />
+              </div>
+              <div class="form-group">
+                <label for="tahap">Tahap:</label>
+                <input type="text" class="form-control" name="tahap" value={this.state.tahap} onChange={this.onChange} placeholder="Tahap" />
+              </div>
+              <div class="form-group">
+                <label for="skill">Skill:</label>
+                <input type="skill" class="form-control" name="skill" value={this.state.skill} onChange={this.onChange} placeholder="skill" />
+              </div>
+              <div class="form-group">
+                <label for="reward">Reward:</label>
+                <input type="reward" class="form-control" name="reward" value={this.state.reward} onChange={this.onChange} placeholder="reward" />
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>

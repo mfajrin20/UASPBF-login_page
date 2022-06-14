@@ -6,7 +6,7 @@ const series = () => {
     
 return(
         <>
-
+  <header className="container-header">
 <div className="d-flex justify-content-center align-items-center">
        <h1> POKE POKE POKEMON </h1>
        
@@ -99,7 +99,7 @@ return(
       </div>
         </div>
         <div className="d-flex justify-content-center align-items-center">
-      <img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Pokemon-Go-How-to-play-Pokemon-Go-How-to-download-Pokemon-Go-how-to-catch-Pokemon-696684.jpg"
+      <img src="https://freepngimg.com/thumb/pokemon_go/21345-4-pokemon-go-file.png" height="500" width="300"
             />
       </div>
       </Container>
@@ -123,7 +123,7 @@ return(
       </div>
         </div>
         <div className="d-flex justify-content-center align-items-center">
-      <img src="https://assets.pokemon.com/assets/cms2/img/trading-card-game/_tiles/strategy/designing-a-deck-from-scratch/build-pokemon-tcg-decks-169-en.jpg"
+      <img src="https://i5.walmartimages.com/asr/8977a30f-fd48-4148-b482-0cc74f3b5277_1.5fc9a3765ab3362429342d7d4e106f5f.jpeg"
             />
       </div>
       </Container>
@@ -159,6 +159,7 @@ return(
       </div>
               </p>
                      </a>
+                     </header>
       </>
       
       

@@ -53,7 +53,7 @@ class App extends Component {
               </p>
                    
       <div className="d-flex justify-content-center align-items-center" >
-        {/* <h1>M FAJRIN </h1> */}
+
           
         </div>
      

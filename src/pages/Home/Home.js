@@ -5,7 +5,7 @@ import axios from "axios";
 
 // import Header from "../../components/Header/Header";
 import PokeCard from "../../components/Pokemon/PokeCard";
-import Search from "../../components/Others/Search";
+// import Search from "../../components/Others/Search";
 import LoadingCard from "../../components/Loading/LoadingCard";
 import Footer from "../../components/Others/Footer";
 import api from "../../services/api";
@@ -142,8 +142,11 @@ function Home({ history, ...props }) {
         }
         fetchPokemon()
      };
+     
   return (
+    
     <div>
+     
       {/* <Header /> */}
 
       <Container fluid>

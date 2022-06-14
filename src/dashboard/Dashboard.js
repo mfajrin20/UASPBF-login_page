@@ -56,12 +56,12 @@ return(
         </div>
         <a href = "/news"> News </a>
         </button>
-        <button>
+              <button>
         <div className="d-flex justify-content-center align-items-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png" height="50" width="50"
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="50" width="50"
       />
         </div>
-        <a href = "/ToDoListPokemon"> To Do List </a>
+        <a href = "https://github.com/mfajrin20/UASPBF-login_page"> Github </a>
         </button>
         <br/>
           <br/>

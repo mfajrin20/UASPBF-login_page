@@ -198,7 +198,15 @@ function Home({ history, ...props }) {
       </div>
               </p>
                      </a>
-
+                  
+                <a href = "/ToDoListPokemon">
+            <p className="text-light" style={{ textAlign: "center" }}>
+            <div className="d-flex justify-content-center align-items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png" height="50" width="50"
+            />
+      </div>
+              </p>
+                     </a>
               <Filtering/>
               
             <Row>

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals"
 
 import Login from "./login/Login";
 import Join from "./login/Join";
@@ -13,7 +14,7 @@ import Series from "./series/Series";
 import PermainanVideo from "./permainanvideo/PermainanVideo"
 import Hero from "./hero/Hero";
 import News from "./news/News"
-import ToDoListPokemon from "./App"
+// import App from "./ToDoListPokemon/App"
 // import Edit from './ToDoListPokemon/Edit';
 // import Create from './ToDoListPokemon/Create';
 // import Show from './ToDoListPokemon/Show';
@@ -37,8 +38,8 @@ function Routes() {
           <Route path="/home" component={Home} />
           <Route path="/details/:name?" component={Details} />
           {/* To Do List */}
-          <Route path='/ToDoListPokemon' component={ToDoListPokemon} />
-          {/* <Route path='/edit/:id' component={Edit} />
+          {/* <Route path='/ToDoListPokemon' component={ToDoListPokemon} />
+          <Route path='/edit/:id' component={Edit} />
           <Route path='/create' component={Create} />
           <Route path='/show/:id' component={Show} /> */}
 
@@ -51,3 +52,4 @@ function Routes() {
 
 
 export default Routes;
+reportWebVitals();

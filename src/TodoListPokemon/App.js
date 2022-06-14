@@ -40,17 +40,17 @@ class App extends TodoListPokemon {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              Article LIST
+              HISTORY PENGGUNAAN POKEMON
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/create" class="btn btn-primary">Add Article</Link></h4>
+            <h4><Link to="/create" class="btn btn-primary">Tambah Pengalaman</Link></h4>
             <table class="table table-stripe">
               <thead>
                 <tr>
-                  <th>Title</th>
-                  <th>Body</th>
-                  <th>Author</th>
+                  <th>ID Pokemon</th>
+                  <th>Pengalaman</th>
+                  <th>Pengguna</th>
                 </tr>
               </thead>
               <tbody>
